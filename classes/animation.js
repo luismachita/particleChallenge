@@ -55,7 +55,6 @@ module.exports = class Animation {
         })
     }
 
-
     /**
      * This method traverses an array of directions
      * and attempts to map the movement of particles through space
@@ -70,8 +69,10 @@ module.exports = class Animation {
 
         // condition to get out of recursion
         if (!stateHash.state.includes('L') && (!stateHash.state.includes('R'))) {
+
+            // logs an array of strings representing the particles in motion
             console.log((self.particleArrays));
-            // returns an array of strings representing the particles in motion
+            // returns the same array
             return self.particleArrays;
         }
 
@@ -125,8 +126,6 @@ module.exports = class Animation {
         // as an initial snapshot of particles, we need the visualized particles,
         // not the real directions
         self.particleArrays.push(self.visualizeParticles(arrayOfDirections));
-
-
         self.iterateUntilEmpty(stateHash, speed, directionsHash);
 
     }
