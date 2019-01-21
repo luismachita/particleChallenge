@@ -1,0 +1,11 @@
+{
+  "name": "castaneda-test",
+  "version": "1.0.0",
+  "description": "coding assessment Vestwell",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Luis Castaneda",
+  "license": "ISC"
+}
